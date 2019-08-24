@@ -1,0 +1,262 @@
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 450px){
+  #container {
+    width: 300px!important;
+    margin: 0 auto;
+  }
+  form {
+    width: 300px!important;
+    margin: 0 auto 10px!important;
+  }
+  textarea {
+    width: 270px!important;
+  }
+  .profile {
+    width: 270px!important;
+    margin: 0 auto;
+  }
+  .menu {
+    margin: 0 auto!important;
+  }
+  .menu li a{
+    font-size: 5px!important;
+    width: 60px!important;
+  }
+  /* .submit {
+    width: 280px;
+    margin: 0 auto 10px;
+  }
+  .lead-login, dt, label{
+    font-size: 0.5em!important;
+  }
+  dd > input {
+    width: 170px;
+  } */
+}
+
+header {
+  background: lightgreen;
+  clear: both;
+  height: 70px;
+}
+
+h1  {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+  color: white;
+  line-height: 70px;
+}
+
+.logout {
+  margin: 0;
+  float: right;
+  display: inline-block;
+  line-height: 70px;
+}
+.logout a{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.logout a:hover{
+  opacity: 0.8;
+}
+
+#container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.menu li a{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.menu li a.active{
+  /* border: 1px solid lightgray; */
+  color: black;
+  background: lightgray;
+  /* border-bottom: #fff; */
+}
+.menu li a:not(.active):hover{
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+.content.active {
+  display: block;
+}
+.content {
+  display: none;
+  /* border: 1px solid lightgray; */
+}
+
+.paging{
+  list-style: none;
+  padding: 0;
+}
+
+.paging > li {
+  display: inline-block;
+}
+
+form {
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.lead {
+  border-left: 5px solid lightgreen;
+  margin: 0 0 6px 0;
+}
+
+.msg {
+  clear: both;
+  padding: 10px 0 10px 0;
+  border-top: solid 1px #ddd;
+}
+
+.msg img {
+  border: 1px solid lightgray;
+  float: left;
+  margin-right: 5px;
+}
+
+.msg p {
+  margin: 0;
+}
+
+.name {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+
+.delete, .favorite, .res, .liked,.follow, .followed, .mutualFollow{
+  /* float: right; */
+  color: white;
+  padding: 2px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.delete {
+  background: red;
+}
+.favorite, .liked{
+  background: lightgreen;
+}
+.res {
+  background: lightgray;
+}
+.follow {
+  color: lightgreen;
+  border: 1px solid lightgreen;
+}
+.followed {
+  color: white;
+  background: lightgreen;
+}
+
+.mutualFollow {
+  color: lightgreen;
+}
+
+.day {
+  color: lightgray;
+}
+
+
+.msg .day,
+.delete, .favorite, .res, .liked, .follow, .followed, .mutualFollow{
+  font-size: 80%;
+}
+
+/* プロフィール */
+.profile {
+  margin-top: 0;
+  width: 600px;
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.profile img{
+  border: 1px solid lightgray;
+}
+.profile p{
+  margin-bottom: 0;
+}
+
+.profile a {
+   color: black;
+}
+
+.user-name {
+  display: block;
+  color: black;
+  font-size: 35px;
+}
+
+/* users */
+.users {
+  clear: both;
+  padding-top: 4px;
+  border-top: solid 1px #ddd;
+  height: 60px;
+}
+.users img{
+  border: 1px solid lightgray;
+  float: left;
+  margin-right: 5px;
+}
+.users p{
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+
+/* 会員登録 */
+.submit {
+  margin-top: 10px;
+  border-radius: 3px;
+  width: 600px;
+  padding: 1px 0 11px 20px;
+  background: lightgreen;
+}
+
+dd {
+  margin: 0 0 10px 0;
+}
+
+.required {
+  background: red;
+  color: white;
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+}
